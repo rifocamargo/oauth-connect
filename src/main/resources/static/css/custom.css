@@ -1,0 +1,66 @@
+div.centralize {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-right: -50%;
+	transform: translate(-50%, -50%)
+}
+
+a.btn-social {
+	display: block;
+	width: 85px;
+	height: 40px;
+	line-height: 40px;
+	border-radius: 4px;
+	font-size: 16px;
+	text-align: center;
+	transition: all .2s;
+	margin-bottom: 10px;
+	width: 305px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+a {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+a.btn-google {
+	background-color: #db402c;
+}
+
+a.btn-facebook {
+	background-color: #3b5998;
+}
+
+a.btn-github {
+	background-color: #000000;
+}
+
+div a i.icon-google {
+	width: 23px;
+	height: 15px;
+	background: url(../images/icon-web.png) 0 -47px no-repeat;
+	display: inline-block;
+	margin: 0 10px;
+	vertical-align: -2px;
+}
+
+div a i.icon-facebook {
+	width: 23px;
+	height: 15px;
+	background: url(../images/icon-web.png) 0 -1px no-repeat;
+	display: inline-block;
+	margin: 0 10px;
+	vertical-align: -2px;
+}
+
+div a i.icon-github {
+	width: 23px;
+	height: 15px;
+	background: url(../images/icon-web.png) 0 -68px no-repeat;
+	display: inline-block;
+	margin: 0 10px;
+	vertical-align: -2px;
+}

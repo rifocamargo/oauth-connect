@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<title>Demo</title>
+<meta name="description" content="" />
+<meta name="viewport" content="width=device-width" />
+<base href="/" />
+<link rel="stylesheet" href="css/custom.css" >
+<link rel="stylesheet" type="text/css" href="/webjars/bootstrap/css/bootstrap.min.css" />
+<script type="text/javascript" src="/webjars/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="/webjars/bootstrap/js/bootstrap.min.js"></script>
+</head>
+<body>
+    
+    <div class="container centralize unauthenticated" >
+        <div>
+            <a href="/login/facebook" class="btn-social btn-facebook" style="color: #FFFFFF; text-decoration: none;">
+              <i class="icon-facebook"></i>
+              Facebook
+            </a>
+        </div>
+        <div>
+            <a href="/login/github" class="btn-social btn-github" style="color: #FFFFFF; text-decoration: none;">
+              <i class="icon-github"></i>
+              Github
+            </a>
+        </div>
+        <div>
+            <a href="/login/google" class="btn-social btn-google" style="color: #FFFFFF; text-decoration: none;">
+              <i class="icon-google"></i>
+              Google
+            </a>
+        </div>
+    </div>
+    <div class="container centralize authenticated" style="display: none">
+        <div><h1 style="text-align: center;">Logged in as: </h1></div>
+        
+        <div><span style="text-align: center; display: block; margin-bottom: 10px;" id="user"></span></div>
+        <div>
+            <button style="margin-left: auto; margin-right: auto; display: block;" onClick="logout()" class="btn btn-primary">Logout</button>
+        </div>
+    </div>
+    <script type="text/javascript" src="/webjars/js-cookie/js.cookie.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+</body>
+</html>

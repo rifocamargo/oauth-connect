@@ -1,0 +1,45 @@
+server:
+  port: 8081
+spring:
+  application:
+    name: oauth-connect
+
+facebook:
+  client:
+    client-id: 233668646673605
+    client-secret: 33b17e044ee6a4fa383f46ec6e28ea1d
+    access-token-uri: https://graph.facebook.com/oauth/access_token
+    user-authorization-uri: https://www.facebook.com/dialog/oauth
+    token-name: oauth_token
+    authenticationScheme: query
+    client-authentication-scheme: form
+  resource:
+    user-info-uri: https://graph.facebook.com/me
+    
+github:
+  client:
+    client-id: 38a5cbd7e409eef8cd2f
+    client-secret: 0b87503a47713416fc503666ab795f79ef8fd776
+    access-token-uri: https://github.com/login/oauth/access_token
+    user-authorization-uri: https://github.com/login/oauth/authorize
+    client-authentication-scheme: form
+  resource:
+    user-info-uri: https://api.github.com/user
+    
+google:
+  client:
+    client-id: 1013924190991-6ovo9aj63qk8jion34rn3s0ltui4ekn0.apps.googleusercontent.com
+    client-secret: DPvf5qm-b_NTLZ5QZ4n4fkIy
+    access-token-uri: https://www.googleapis.com/oauth2/v3/token
+    user-authorization-uri: https://accounts.google.com/o/oauth2/auth
+    client-authentication-scheme: form
+    scope: 
+      - openid
+      - profile
+      - email
+  resource:
+    user-info-uri: https://www.googleapis.com/userinfo/v2/me
+    
+logging:
+  level:
+    org.springframework.security: DEBUG
